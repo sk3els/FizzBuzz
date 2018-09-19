@@ -1,5 +1,6 @@
 import requests, os
 
+# grabs ENV vars specified in Docker file or otherwise overridden
 requestJson = {'max_range': os.environ['MAX_RANGE']}
 functionUrl = os.environ['FUNCTION_URL']
 
